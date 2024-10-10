@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Health Check</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { margin: 50px; text-align: center; }
+        .status { font-size: 20px; color: green; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 th:text="${message}"></h1>
+    <p class="status">Status: <span th:text="${status}"></span></p>
+    <p>Timestamp: <span th:text="${timestamp}"></span></p>
+</div>
+</body>
+</html>
