@@ -3,16 +3,35 @@
 <head>
     <title>Health Check</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        .container { margin: 50px; text-align: center; }
-        .status { font-size: 20px; color: green; }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/backimg.jpeg'); /* 이미지 경로 설정 */
+            background-size: cover; /* 화면 전체를 덮도록 설정 */
+            background-repeat: no-repeat; /* 반복 방지 */
+            background-position: center 30%; /* 중앙 배치 */
+        }
+        .container {
+            margin: 50px;
+            text-align: center; /* 컨테이너 내의 모든 텍스트 중앙 정렬 */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .status {
+            font-size: 50px;
+            color: black;
+            margin-bottom: 10px; /* "Status"와 "Timestamp" 사이의 간격을 줄임 */
+        }
+        .timestamp {
+            font-size: 20px; /* "Timestamp" 텍스트 크기 조정 */
+            color: black;
+            margin-top: 0; /* 추가 상단 간격을 제거하여 간격을 좁힘 */
+        }
     </style>
 </head>
 <body>
 <div class="container">
-    <h1 th:text="${message}"></h1>
     <p class="status">Status: <span th:text="${status}"></span></p>
-    <p>Timestamp: <span th:text="${timestamp}"></span></p>
+    <p class="timestamp">Timestamp: <span th:text="${timestamp}"></span></p>
 </div>
 </body>
 </html>

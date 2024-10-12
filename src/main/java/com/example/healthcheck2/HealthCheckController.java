@@ -26,8 +26,8 @@ class UiController {
 
     @GetMapping("/")
     public String index(Model model) {
-        model.addAttribute("message", "Health Check Status");
-        model.addAttribute("status", "Service is running!");
+        model.addAttribute("message", "Health Check Page");
+        model.addAttribute("status", "Server is Running");
         model.addAttribute("timestamp", LocalDateTime.now().toString());
         return "index";
     }
