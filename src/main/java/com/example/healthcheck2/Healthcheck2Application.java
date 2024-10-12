@@ -10,4 +10,6 @@ public class Healthcheck2Application {
 		SpringApplication.run(Healthcheck2Application.class, args);
 	}
 	//here
+	//here
+
 }
