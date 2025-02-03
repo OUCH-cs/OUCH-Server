@@ -11,7 +11,8 @@ public class HospitalCategoryPk implements Serializable {
 	private Long medicalCategoryId;
 	private Long hospitalId;
 
-	public HospitalCategoryPk() {}
+	public HospitalCategoryPk() {
+	}
 
 	public HospitalCategoryPk(Long medicalCategoryId, Long hospitalId) {
 		this.medicalCategoryId = medicalCategoryId;
@@ -20,9 +21,11 @@ public class HospitalCategoryPk implements Serializable {
 
 	@Override
 	public boolean equals(Object o) {
-		if (this == o) return true;
-		if (!(o instanceof HospitalCategoryPk)) return false;
-		HospitalCategoryPk that = (HospitalCategoryPk) o;
+		if (this == o)
+			return true;
+		if (!(o instanceof HospitalCategoryPk))
+			return false;
+		HospitalCategoryPk that = (HospitalCategoryPk)o;
 		return Objects.equals(medicalCategoryId, that.medicalCategoryId) &&
 			Objects.equals(hospitalId, that.hospitalId);
 	}

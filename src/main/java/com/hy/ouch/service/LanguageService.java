@@ -5,11 +5,10 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
-import com.hy.ouch.apiPayload.code.BaseErrorCode;
 import com.hy.ouch.apiPayload.code.status.ErrorStatus;
 import com.hy.ouch.apiPayload.exception.GeneralException;
 import com.hy.ouch.domain.Language;
-import com.hy.ouch.repository.LanguageRepository;
+import com.hy.ouch.repository.language.LanguageRepository;
 import com.hy.ouch.web.dto.LanguageDto;
 
 import lombok.RequiredArgsConstructor;
